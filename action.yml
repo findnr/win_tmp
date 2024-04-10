@@ -1,19 +1,17 @@
 name: win_tmp
-on:
-  workflow_call:
-    inputs:
-      zerotier_id:
-        required: true
-        type: string
-      zerotier_token:
-        required: true
-        type: string
-      wx_push_app_token:
-        required: true
-        type: string
-      wx_uid:
-        required: true
-        type: string
+inputs:
+    zerotier_id:
+      required: true
+      type: string
+    zerotier_token:
+      required: true
+      type: string
+    wx_push_app_token:
+      required: true
+      type: string
+    wx_uid:
+      required: true
+      type: string
 jobs:
   build:
     steps:
